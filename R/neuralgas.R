@@ -27,6 +27,8 @@ neuralgas <- function(X,
                        update_fun = update_euclidean,
                        verbose = T,
                        refresh = 250){
+  
+  X <- as.matrix( X )
   N <- nrow(X)
   n <- ncol(X)
 
